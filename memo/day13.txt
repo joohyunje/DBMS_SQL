@@ -1,0 +1,54 @@
+DCL
+	데이터베이스에 접근하는 권한을 제어하는 명령어
+
+	- GRANT
+		- 계정에 권한을 부여하는 명령어
+
+	- REVOKE
+		- 계정에 권한을 제거(회수)하는 명령어
+
+계정 만들기
+	- sys 계정으로 접속하여 계정을 생성해보자.
+	- CREATE USER 계정이름 IDENTIFIED BY 비밀번호;
+
+CREATE SESSION 권한 부여하기
+	- GRANT CREATE SESSION TO 계정명;
+
+SELECT 권한 부여하기
+	- GRANT SELECT ON HR.EMPLOYEES TO 계정명;
+	-> 새로 만든 계정에 HR계정 내에있는 직원 테이블을 조회할 수 있는 권한을 부여.
+
+	- GRANT SELECT, UPDATE ON HR.EMPLOYEES TO 계정명; // 동시에
+
+권한 회수하기
+	- REVOKE SELECT ON HR.EMPLOYEES FROM 계정명;
+--=================================================================================
+CASE 표현식 (자바의 if문과 비슷.)
+	CASE
+		WHEN 조건1 THEN 값1
+		WHEN 조건2 THEN 값2
+		...
+		ELSE 값 // 생략 -> NULL
+	END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

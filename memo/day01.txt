@@ -1,0 +1,62 @@
+데이터베이스(DataBase)
+	- 여러가지 데이터를 모아둔 공간
+	- 데이터는 물리적인 파일로 저장되어 있으나 직접 열어서 조회하고 수정하는 것이 아니라
+	  DBMS에서 SQL 이라는 언어를 통해 조회, 수정 등을 하게된다.
+
+DBMS(DataBase Management System)
+	- 데이터베이스 관리 시스템
+	- DB에 존재하는 데이터를 편하고 효율적으로 관리하는 환경을 제공해주는 프로그램
+
+RDBMS(Relational DataBase Management System)
+	- 관계형 데이터베이스 관리 시스템
+	- 데이터를 2차원의 테이플(표) 형태로 저장해 놓는 데이터베이스
+	- 종류 : 오라클, MySQL, 마리아DB ...
+
+설치
+	https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
+
+	오라클 계정
+	hogeun4656@nate.com
+	Abcd4656!
+
+오라클 설치 여부 확인하기
+	cmd -> sqlplus -> Enter user name : 뜨면 설치되어있음.
+
+SQL (Structured Query Language)
+	- 구조화된 표준 쿼리 언어
+	- DBMS의 데이터를 관리하기 위해 설계된 언어
+	- 명령어을 SQL문, 쿼리문, 질의문 등등 이라고 말한다.
+
+테이블(표)
+	- 행과 열로 이루어진 2차원의 표
+
+오라클의 기본 계정
+	- sys : 관리자 계정
+	- hr(휴먼 리소스) : 학습을 위한 계정
+
+hr 계정 잠금 해제하기
+	- cmd > sqlplus > sys as sysdba > 1234
+	- hr 계정 잠금해제 alter user hr account unlock;
+	- hr 계정 비밀번호 변경 alter user hr identified by hr;
+	- 두 쿼리문을 동시에 : alter user account unlock identified by hr;
+	- show user; <- 현재 로그인 되어있는 계정 확인.
+	- select * from employees; <- employees 테이블의 모든 데이터 확인하는 쿼리문.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

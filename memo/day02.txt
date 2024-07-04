@@ -1,0 +1,64 @@
+- DBMS IDE
+	DBeaver - 무료 DB 접속 툴
+
+데이터베이스 연결
+	- 새 데이터베이스 연결 > Oracle > Database : XE > 로그인하려는 계정, 비밀번호 입력
+	> Client : XE > Test Connection 확인 후 연결 완료!
+
+최초 1회만! 연결 정보를 가지고 있는 jar 등록
+	- Edit driver Settings > Libraries > 전부 삭제 > Add file > ojdbc6 추가 > 확인
+	- ojdbc6 의 위치 : C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib
+
+SQL의 주요 특징
+	- 한 줄씩 실행되는 인터프리터 언어
+	- 대문자와 소문자를 구분하지 않는다.
+
+일반적인 사용법 (가독성을 높이는 방법)
+	- 여러줄에 걸쳐 작성이 가능하다.
+	- 들여쓰기를 활용한다.
+
+SELECT
+	- 테이블에서 데이터를 조회할 때 사용하는 명령어
+
+문법
+	- SELECT 컬럼명 FROM 테이블명; > '해당 테이블에서 특정 컬럼을 선택해서 조회하겠다.'
+
+DBeaver 에서 테이블 정보 확인하기
+	데이터베이스 > Schemas > HR > Tables > 원하는 테이블 더블 클릭
+
+종합 정리
+	SELECT 컬럼명 [AS "별명"], 컬럼명 [AS "별명"]
+	FROM 테이블명
+	[ORDER BY 컬럼명 [ASC or DESC]]
+
+자료형 
+	1. 문자 : CHAR / VARCHAR2
+	2. 숫자 : NUMBER
+	3. 날짜 : DATE
+
+연산자
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

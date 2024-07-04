@@ -1,0 +1,50 @@
+TCL(Transaction Control Language) : 트랜잭션 제어어
+
+트랜잭션
+	- 하나의 작업 단위
+	- 여러 개의 SQL문의 묶음
+
+1. COMMIT;
+	- 모든 작업(트랜잭션)을 확정하는 명령어
+
+2. ROLLBACK;
+	- 이전 커밋 시점으로 되돌아가는 명령어
+	※ ROLLBACK; 을 여러 번 한다고 해서, 계속 이전으로 가는 것은 아니다.
+
+▶ TCL은 DML에만 영향을 끼친다.
+- TRUNCATE : 	DDL(롤백 불가능)
+- DELETE : 	DML(롤백 가능)
+-> 되도록이면 DELETE 를 사용해서 데이터를 삭제하도록 하자!
+--========================================================================================
+GROUP BY, HAVING절
+- GROUP BY절은 특정 컬럼에 있는 값을 그룹으로 묶어서 데이터를 집계한다.
+- 위치는 WHERE절 다음, ORDER BY 이전에 작성한다.
+- HAVING절은 GROUP BY 다음에 사용할 수 있으며 SELECT의 WHERE절 처럼
+GROUP BY의 HAVING도 조건을 걸어준다.
+- WHERE절은 테이블 전체에 조건을 걸어 데이터를 가져오며, 그 데이터들을 GROUP BY로 묶어준다.
+- HAVING절은 묶은 데이터에 조건이 필요하다면 HAVING절에 작성한다.
+
+SQL 실행 순서 (SELECT)
+FROM > WHERE > GROUP BY > HAVING > SELECT > ORDER BY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+SUB QUERY
+	- 하나의 쿼리 내에 작성하는 또 다른 쿼리
+	- 서브 쿼리의 위치에 따르 종류
+	1. SELECT절 : SCALAR
+	2. FROM 절 : IN LINE VIEW
+	3. WHERE 절 : SUB QUERY
+
+ROWNUM
+	결과 행 앞에 1부터 1씩 증가하는 시퀀스를 붙여준다.
+	
